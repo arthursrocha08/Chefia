@@ -7,7 +7,7 @@ from datetime import datetime
 genai.configure(api_key=st.secrets["general"]["api_key"])
 
 # Modelo Gemini
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-3.1-flash-lite-preview')
 
 # Configuração da página
 st.set_page_config(page_title="ChefIA", page_icon="🍳", layout="wide")
