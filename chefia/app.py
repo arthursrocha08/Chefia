@@ -4,7 +4,7 @@ import csv
 from datetime import datetime
 
 # Configuração da chave
-genai.configure(api_key="AIzaSyCT-5QTvKm2jW2V8_S9zOKJUbrLcwPaaSE")
+genai.configure(api_key=st.secrets["general"]["api_key"])
 
 # Modelo Gemini
 model = genai.GenerativeModel('gemini-1.5-flash')
